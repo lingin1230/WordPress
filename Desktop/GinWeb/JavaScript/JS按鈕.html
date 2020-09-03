@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <title>Learning Java Script</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+  <!-- <button onclick="alert('您好')">點按我！</button> -->
+  <button id="MyButton">點按我！</button>
+
+  <p id="text">原來的一段文字</p>
+
+  <br><br>
+
+  <button id="MyButton1">點按我！</button>
+
+  <p id="text1">我想添加：</p>
+
+  <br><br>
+
+  <button id="MyButton2">點按我！</button>
+
+  <p id="text2"></p>
+
+
+  <script type="text/javascript">
+
+    var myVarible = 'circle';
+
+
+    document.getElementById('circle').onclick = function() {
+
+      document.getElementById(myVarible).style.display = "none";
+    }
+
+    
+    // document.getElementById('text').innerHTML = "修改後的文字";
+    document.getElementById('MyButton').onclick = function() {
+
+      document.getElementById('text').innerHTML = "新的一段文字";
+    }
+
+    document.getElementById('MyButton1').onclick = function() {
+
+      document.getElementById('text1').innerHTML = document.getElementById('text1').innerHTML+"一段文字";
+    }
+
+    document.getElementById('MyButton2').onclick = function() {
+
+    //   document.getElementById('text2').innerHTML = "就是一段文字";
+    // }
+
+      document.getElementById('text2').innerHTML = "<ul><li>蘋果</li><li>香蕉</li><li>西瓜</li></ul>";
+    }
+
+  </script>
+
+</body>
+</html>

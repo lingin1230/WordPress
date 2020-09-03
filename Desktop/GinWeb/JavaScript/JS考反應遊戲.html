@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <title>考反應遊戲</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <Style>
+
+      :root{
+
+        --bound:140px;
+      }
+
+      body{
+
+        background-color: rgba(255,94,100,0.5);
+        color:white;
+      }
+
+      .bold{
+
+        font-weight: bold;
+      }
+
+      #box{
+
+        width: var(--bound);
+        height: var(--bound);
+        background-color: tomato;
+        display:none;
+        position: relative;
+      }
+
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+  <h1>考考你的反應!</h1>
+  <p class="bold"> 反應時間： <span id="time" >0</span> 秒 </p>
+
+  <div id="box"></div>
+
+
+  <script type="text/javascript">
+
+    var CreateTime;
+    var ClickTime;
+    var ReactionTime;
+
+    function GetRandomColor(){
+
+      var max = 200;
+      var min = 50;
+
+      var green = Math.floor(Math.random() * (max - min + 1)) + min;
+
+      var color = "rgba(255, " +green+ ",100,1)";
+      return color;
+    }
+
+    function MakeBox(){
+
+      var time = Math.random();
+      time = time * 2000;
+
+      setTimeout(function(){
+
+        if(Math.random() >= 0.5){
+
+          document.getElementById('box').style.borderRadius = "70px";
+        }
+
+        else{
+
+          document.getElementById('box').style.borderRadius = "0px";
+        }
+
+        // console.log(window.innerwidth);
+        // console.log(window.innerheight);
+        //
+        // console.log(document.documentElement.clienwidth);
+        // console.log(document.documentElement.clienheight);
+
+        var min = 0;
+        var max = window.innerHeight - 140;
+
+        var top = Math.floor(Math.random() * (max - min + 1)) + min;
+
+        min = 0;
+        max = window.innerWidth - 140;
+        var left= Math.floor(Math.random() * (max - min + 1)) + min;
+
+
+        document.getElementById('box').style.top = top+ "px" ;
+        document.getElementById('box').style.left = left+ "px" ;
+        document.getElementById('box').style.backgroundColor = GetRandomColor();
+        document.getElementById('box').style.display = "block";
+        CreateTime = Date.now();
+
+      },time);
+
+    }
+
+    document.getElementById('box').onclick = function(){
+
+      this.style.display = "none";
+      ClickTime = Date.now();
+      ReactionTime = (ClickTime - CreateTime) / 1000;
+      document.getElementById('time').innerHTML = ReactionTime;
+
+      MakeBox();
+    }
+
+    MakeBox();
+
+
+  </script>
+
+</body>
+</html>

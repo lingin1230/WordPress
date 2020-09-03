@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <title>驗證表單</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/jscript" src="jquery.min.js"></script>
+
+    <style>
+
+      body{
+
+        background-color:#f2f3f5;
+      }
+
+      #container{
+
+        padding-top: 60px;
+        width: 600px;
+        margin: auto;
+        font-family: "Helvetica Neue" , "Helvetica" , "Arial";
+      }
+
+      .inputStyle{
+
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        font-size: 1.1em;
+        padding-left: 20px;
+        margin-bottom: 10px;
+      }
+
+      .inputWidth{
+
+        width:300px;
+        height:40px;
+
+      }
+
+      #mailGender{
+
+        width:323px;
+        height:40px;
+      }
+
+      label{
+
+        width: 200px;
+        float: left;
+        font-size: 1.2em;
+        padding-top: 12px;
+      }
+
+      #mailMessage{
+
+        width:500px;
+        padding-top: 15px;
+      }
+
+      #submitButton{
+
+        background-color: #aa47bc;
+        color: white;
+        width: 523px;
+        height: 40px;
+      }
+
+      #error{
+
+        color: red;
+
+      }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+  <div id="container">
+
+    <form id="validationForm">
+
+      <label for="emailName"> 姓 名 </label>
+      <input id="emailName" class="inputStyle inputWidth" type="text" name="name" placeholder="請輸入您的姓名"></input>
+
+      <label for="emailAddress"> 電子郵箱 </label>
+      <input id="emailAddress" class="inputStyle inputWidth" trpe="text" name="email" placeholder="請輸入您的郵箱"></input>
+
+      <label for="mailGender"> 性 別 </label>
+      <select id="mailGender" class="inputStyle" name="Gender">
+        <option value="male"> 男 性 </option>
+        <option value="female"> 女 性 </option>
+      </select>
+
+      <label for="pass1"> 密 碼 </label>
+      <input id="pass1" class="inputStyle inputWidth" type="password" name="pass1" placeholder=" 密 碼 ">
+
+      <label for="pass2"> 確認密碼 </label>
+      <input id="pass2" class="inputStyle inputWidth" type="password" name="pass2" placeholder=" 確認密碼 "></input>
+
+      <textarea id="mailMessage" class="inputStyle" name="message" rows="8" cols="80" placeholder="請描述您的狀況"></textarea>
+
+      <button id="submitButton" class="inputStyle" type="submit" name="submit"> 發送郵件 </button>
+
+
+    </form>
+
+     <div id="error"></div>
+
+  </div>
+
+
+
+  <script type="text/javascript">
+
+    $("#validationForm").submit(function(event){
+
+      var errorMessage = "" ;
+
+      event.preventDefault();
+
+      var name = $("#emailName").val();
+      var email = $("#emailAddress").val();
+      var pass1 = $("#pass1").val();
+      var pass2 = $("#pass2").val();
+      var message = $("#mailMessage").val();
+
+      function isValidEmailAddress(emailAddress){
+
+        var pattern = /^\b[a-zA-Z0-9-]+@[a-zA-Z0-9]+\.com\b/i;
+
+        return pattern.test(emailAddress);
+
+      }
+
+      if (name == "" || email == "" || pass1 =="" || pass2 =="" || message == "") {
+
+        errorMessage = "請輸入完整訊息";
+
+      } else if (!isValidEmailAddress(email)) {
+
+        errorMessage ="請輸入正確格式的郵箱地址";
+
+      } else if (pass1 != pass2){
+
+        errorMessage ="請確認您輸入的密碼";
+
+      }
+
+      if (errorMessage == "") {
+
+        $("#error").html("表單已提交");
+        $("#error").css("color" , "green");
+
+      } else {
+
+        $("#error").html(errorMessage);
+        $("#error").css("color" , "red");
+
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>

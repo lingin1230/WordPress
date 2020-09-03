@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <title>MyeBay</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<!-------------- Header -------------->
+
+<header>
+
+  <div class="container">
+
+    <ul class="navbar">
+
+      <li id="SignInStyle" class="navItem">Hi <a href="#">Sign In</a> Or <a href="#">Register</a> </li>
+      <li class="navItem"> <a href="#">Daliy Deals</a> </li>
+      <li class="navItem"> <a href="#">Sells</a> </li>
+      <li class="navItem NoBorder"> <a href="#">Help & Contacy</a> </li>
+
+      <li id="cart" class="navItem FloatRight NoBorder"><img src="img/cart.png" alt="cart" title="您的購物車" width="20px"></li>
+      <li id="alert" class="navItem FloatRight NoBorder"><img src="img/alert.png" alt="alert" width="20px"></li>
+      <li class="navItem FloatRight NoBorder"> <a href="#">My eBay</a> </li>
+
+    </ul>
+
+  </div>
+
+</header>
+
+
+<!-------------- Search Form -------------->
+
+
+
+
+<div id="SearchBar" class="ClearFix SetBGColor">
+  <div class="container">
+
+    <img id="brand" src="img/brand.png" alt="eBay" height="55px">
+
+    <button id="ShoppingButton" type="button">
+      <p>Shop by category</p>
+      <img id="arrow" src="img/arrow.png" alt="arrow" width="20px">
+    </button>
+
+    <form id="SearchForm">
+      <table>
+        <tr>
+
+          <td>
+            <input id="SearchField" class="TextField" type="text"
+            name="SearchContent" placeholder="Search for anything">
+          </td>
+
+          <td>
+            <div id="CategoryTextfield" class="TextField">
+              <select class="options" name="cate">
+                <option selected="selected" value="0">All category</option>
+                <option value="1">Antiques</option>
+                <option value="2">Art</option>
+                <option value="3">Baby</option>
+                <option value="4">Books</option>
+                <option value="5">Business &amp; Industrial</option>
+                <option value="6">Cameras &amp; Photo</option>
+                <option value="7">Cell phone &amp; Accessories</option>
+              </select>
+            </div>
+          </td>
+
+          <td>
+            <input class="BtnPrimary" value="Search" type="submit">
+          </td>
+
+          <td>
+            <a href="#" id="AdvancedButton" title="高級搜索">Advanced</a>
+          </td>
+
+        </tr>
+      </table>
+    </form>
+
+  </div>
+</div>
+
+
+<!-------------- Navigation Bar -------------->
+
+
+<nav class="ClearFix SetBGColor">
+  <div class="container">
+    <ul id="NavigationBar" class="navbar TbBorder">
+
+      <li class="navItem LiSpace NoBorder"><a href="#">Following</a></li>
+      <li class="navItem LiSpace NoBorder active"><a href="#">Today</a></li>
+
+      <div class="DivIder"></div>
+
+      <li class="navItem LiSpace NoBorder"><a href="#">Fashion</a></li>
+      <li class="navItem LiSpace NoBorder"><a href="#">Electronics</a></li>
+      <li class="navItem LiSpace NoBorder"><a href="#">Collectibles &amp; Arts</a></li>
+      <li class="navItem LiSpace NoBorder"><a href="#">Home &amp; Garden</a></li>
+      <li class="navItem LiSpace NoBorder"><a href="#">Sporting Goods</a></li>
+      <li class="navItem LiSpace NoBorder"><a href="#">Motors</a></li>
+      <li class="navItem LiSpace NoBorder"><a href="#">Daily Deals</a></li>
+
+  </ul>
+ </div>
+</nav>
+
+
+<!-------------- Advertisement -------------->
+
+<section id="AdSection" class="SetBGColor ClearFix">
+  <div class="container">
+
+    <div id="colume1">
+      <div><img id="ad1" class="AddBorder" src="img/ad1.png" alt="ad1" width="876px"></div>
+    </div>
+
+    <div id="colume2">
+      <div><img id="ad2" class="AddBorder" src="img/ad2.png" alt="ad2" width="300px"></div>
+      <div><img id="ad3" class="AddBorder" src="img/ad3.png" alt="ad3" width="300px"></div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-------------- Product section -------------->
+
+
+<section id="ProductSection" class="SetBGColor ClearFix">
+
+  <div class="container">
+
+     <h2 class="HeroHeading">Today's Featured Collection</h2>
+
+     <div id="ShowProduct">
+
+  <!-- ------ Product section1 ------ -->
+
+        <div class="product-section">
+
+          <div class="ProductPhoto">
+
+
+            <div class="PhotoColume1">
+              <img id="photo1"src="img/product1.png" alt="product1">
+            </div>
+
+            <div class="PhotoColume2">
+              <div class="thumb">
+                <img id="ThumbMailFix" class="ThumbMail" src="img/thumbnail1_1.png" alt="thumbnail1_1.png">
+              </div>
+              <div class="thumb">
+                <img class="ThumbMail" src="img/thumbnail1_2.png" alt="thumbnail1_2.png">
+              </div>
+              <div class="thumb">
+                <img class="ThumbMail" src="img/thumbnail1_3.png" alt="thumbnail1_3.png">
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- -------------- Article ------------- -->
+
+          <article>
+
+            <div class="LeftCol">
+              <h3 class="title">In a Flash</h3>
+              <div class="DescriptionContainer">
+                <p class="ProductDetails">
+                  Make new memories with instant cameras
+                  like a Fuji Instax Mini25, a Leica Sofort, or a
+                  Polaroid instant-print camera-plus a
+                  Lomo'Instant Automat from Lomography.
+                  <a href="#" title="閱讀更多">
+                    <span class="ReadMore"></span>
+                  </a>
+                </p>
+              </div>
+            </div>
+
+
+            <div class="RightCol RightColText">
+              <ul class="RightColContainer">
+                <li class="RightColItem">15 items</li>
+                <li class="RightColItem">by ebaytecheditor</li>
+                <li class="RightColItem"><a calss="ActiveLink" href="#">Shop now</a></li>
+              </ul>
+            </div>
+
+          </article>
+
+
+       </div>
+
+       <!-- ------ Product section1 End ------ -->
+       <!-- ------ Product section2 ------ -->
+
+
+               <div class="product-section RightSec">
+
+                 <div class="ProductPhoto">
+
+
+                   <div class="PhotoColume1">
+                     <img id="PhotoAdjust" src="img/product2.png" alt="product2">
+                   </div>
+
+                   <div class="PhotoColume2">
+                     <div class="thumb">
+                       <img class="ThumbMail" src="img/thumbnail2_1.png" alt="thumbnail2_1.png">
+                     </div>
+                     <div class="thumb">
+                       <img class="ThumbMail" src="img/thumbnail2_2.png" alt="thumbnail2_2.png">
+                     </div>
+                     <div class="thumb">
+                       <img class="ThumbMail" src="img/thumbnail2_3.png" alt="thumbnail2_3.png">
+                     </div>
+                   </div>
+
+
+                 </div>
+
+                 <!-- -------------- Article ------------- -->
+
+                 <article>
+
+                   <div class="LeftCol">
+                     <h3 class="title">Culinary Cuteness</h3>
+                     <div class="DescriptionContainer">
+                       <p class="ProductDetails">
+                         Find adorably playful kitchen gadgets like a Kipik
+                         porcupine toothpick holder, a Suck UK
+                         tea infuser shaped like a goldfish, or a ship-
+                         shaped butter Hood ang Bad Wolf salt and
+                         <a href="#" title="閱讀更多">
+                           <span class="ReadMore"></span>
+                         </a>
+
+                       </p>
+                     </div>
+                   </div>
+
+
+                   <div class="RightCol RightColText">
+                     <ul class="RightColContainer">
+                       <li class="RightColItem">15 items</li>
+                       <li class="RightColItem">by ebaytecheditor</li>
+                       <li class="RightColItem"><a calss="ActiveLink" href="#">Shop now</a></li>
+                     </ul>
+                   </div>
+
+                 </article>
+
+              </div>
+        <!-- ------ Product section2 End ------ -->
+
+    </div>
+  </div>
+</section>
+
+
+<!-- -- ------ Daily Deals ------ -- -->
+
+<section id="DailyDeals" class="ClearFix SetBGColor">
+  <div class="container">
+    <h2 class="HeroHeading">Daily Deals</h2>
+
+    <div class="box">
+
+      <div class="BoxSubcontain">
+        <img class="Sale" src="img/1.jpg" alt="sale-pic">
+        <a href="#" class="details">Dyson SV07 V6 HEPA Cordless Vacuum Wh...</a>
+        <h4 class="price">HKD 431.63</h4>
+      </div>
+
+      <div class="BoxSubcontain">
+        <img class="Sale" src="img/2.jpg" alt="sale-pic">
+        <a href="#" class="details">Dyson SV07 V6 HEPA Cordless Vacuum Wh...</a>
+        <h4 class="price">HKD 431.63</h4>
+      </div>
+
+      <div class="BoxSubcontain">
+        <img class="Sale" src="img/3.jpg" alt="sale-pic">
+        <a href="#" class="details">Dyson SV07 V6 HEPA Cordless Vacuum Wh...</a>
+        <h4 class="price">HKD 431.63</h4>
+      </div>
+
+      <div class="BoxSubcontain">
+        <img class="Sale" src="img/4.jpg" alt="sale-pic">
+        <a href="#" class="details">Dyson SV07 V6 HEPA Cordless Vacuum Wh...</a>
+        <h4 class="price">HKD 431.63</h4>
+      </div>
+
+      <div class="BoxSubcontain">
+        <img class="Sale" src="img/5.jpg" alt="sale-pic">
+        <a href="#" class="details">Dyson SV07 V6 HEPA Cordless Vacuum Wh...</a>
+        <h4 class="price">HKD 431.63</h4>
+      </div>
+
+<!-- -- -- ------ Pagination ------ -- -- -->
+
+      <div class="pagination ClearFix">
+        <div class="PaginationContainer">
+          <a href="#" class=""><</a>
+          <a href="#" class="">1</a>
+          <a href="#" class="">2</a>
+          <a href="#" class="active">3</a>
+          <a href="#" class="">4</a>
+          <a href="#" class="">5</a>
+          <a href="#" class="">></a>
+        </div>
+      </div>
+
+
+
+    </div>
+
+     <!-- ------ Collections ------ -->
+
+     <div id="collections">
+       <p>Get inspired! Explore all off your <a href="#">Trending Collectionss</a></p>
+     </div>
+
+  </div>
+</section>
+
+
+      <!-- -- ------ Footer ------ -- -->
+
+       <footer>
+
+         <div class="container">
+
+           <div style="float:right">
+
+             <p>&copy 2020版權 Jyy-yin.com</p>
+
+           </div>
+
+         </div>
+
+       </footer>
+
+
+</body>
+</html>

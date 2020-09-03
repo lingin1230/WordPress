@@ -1,0 +1,266 @@
+
+
+
+body{
+
+  background-image: url(img/cover.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  /* font-family: monospace ; */
+  font-family: 'Dosis', sans-serif;
+  color:white;
+  letter-spacing: 3px;
+  background-attachment: fixed;　
+}
+
+a {
+  text-decoration: none;
+  color: white !important;
+}
+
+hr {
+  background-color: white;
+  margin: 50px;
+}
+
+.mainArea {
+
+  width: 100%;
+  height: 750px;
+
+
+}
+
+.nav {
+
+  padding: 30px;
+
+  width: 100%;
+  height: 85px;
+
+  /* background-color: black; */
+  position: fixed;
+}
+
+.nav2 {
+
+
+  position:absolute;
+  right:0px;
+  margin-right: 30px;
+}
+
+.option {
+  margin-left: 20px;
+}
+
+.mainLeft {
+
+  /* margin-left: 40px; */
+  margin-top:30px;
+
+  width: 50%;
+  height: 750px;
+  /* background-color: gray; */
+  float: left;
+}
+
+.menu {
+
+  margin-left: 30px;
+}
+
+.mainRight {
+
+  width: 50%;
+  height: 750px;
+  /* background-color: white; */
+  float:left;
+}
+
+.flower {
+
+  width: 40%;
+  margin: 250px 0 0 400px;
+}
+
+.word {
+
+  margin-top: 300px;
+}
+
+.downArea {
+
+  width: 100%;
+  height: 800px;
+  /* background-color: white; */
+  /* float: left; */
+}
+
+.toOne,.toTwo,.toThree,.toFour,.toFive,.toSix,.toSeven,.toEight {
+  text-align: center;
+}
+
+.collection1 {
+
+  margin: 0 auto;
+  width:1150px;
+  height:600px;
+  border: none;
+}
+
+.midSommer1,.midSommer2{
+
+  width: 350px;
+  float: left;
+  margin: 60px 50px 0 0;
+  /* border: solid 1px white; */
+}
+
+.midSommer3{
+
+  width: 350px;
+  float: left;
+  margin-top: 60px
+  /* border: solid 1px white; */
+}
+
+.collection2 {
+  margin: 0 auto;
+  width:900px;
+  height:600px;
+  border: none;
+
+}
+
+.holiday1 {
+
+  width:350px;
+  margin: 60px 15px 0 0;
+  float: left;
+}
+
+.holiday {
+  float: left;
+  width:215px;
+  height:495px;
+  margin-left: 40px;
+  margin-top: 60px;
+}
+
+.holiday2,.holiday3,.holiday4,.holiday5,.holiday6 {
+
+  width:215px;
+  margin: 0 30px 20px 0;
+  float: left;
+}
+
+.collection3 {
+  margin: 0 auto;
+  width:1100px;
+  height:900px;
+  border: none;
+}
+
+.album {
+
+  width:1100px;
+  margin-top: 60px;
+}
+
+.collection4 {
+  margin: 0 auto;
+  width:760px;
+  height:600px;
+  border: none;
+}
+
+.social1,.social2 {
+
+  width: 350px;
+  float: left;
+  margin-top: 60px;
+
+}
+
+.social2 {
+  margin-left: 60px;
+}
+
+.collection5 {
+  margin: 0 auto;
+  width:500px;
+  height:1400px;
+  border: none;
+}
+
+.playbill1 {
+
+  width:500px;
+  margin-top: 60px;
+}
+
+.playbill2 {
+
+  width: 500px;
+}
+
+.collection6 {
+  margin: 0 auto;
+  width:1200px;
+  height:650px;
+  border: none;
+}
+
+.brand {
+
+  width: 1200px;
+  margin-top: 60px;
+}
+
+.collection7 {
+  margin: 0 auto;
+  width:1400px;
+  height:4050px;
+  border: none;
+}
+
+.final1 {
+
+  width: 900px;
+  margin-top: 60px;
+}
+
+.final2 {
+
+  width: 1300px;
+  margin: 60px;
+}
+
+.final3,.final4,.final5,.final6,.final7 {
+
+  width: 700px;
+  /* float: left; */
+  margin: 0 0 60px 0 ;
+}
+
+.collection8 {
+  margin: 0 auto;
+  width:1200px;
+  height:1800px;
+  border: none;
+}
+
+.wall1 {
+
+  width: 600px;
+  margin: 60px 0 30px 0;
+}
+
+.wall2,.wall3,.wall4,.wall5,.wall6,.wall7,.wall8,.wall9,.wall10 {
+
+  width: 280px;
+  margin: 10px;
+  float: left;
+}

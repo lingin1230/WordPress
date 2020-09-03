@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lan="zh-Hant-TW">
+<head>
+    <title>地球軌道</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+
+
+       html,body{
+         height: 100%;
+       }
+
+      #universe{
+
+      background: radial-gradient(#555,#000);
+
+    }
+
+       @keyframes mystars {
+
+        from{opacity: 1;}
+        to{opacity: 0.3;}
+
+    }
+
+     #stars{
+       height:100%;
+       background-image: url("stars.png");
+       background-size: cover;
+
+       animation: mystars 4s infinite alternate;
+     }
+
+        @keyframes sunshine {
+          from{box-shadow: 0 0 45px #f5c01a ;}
+            to{box-shadow: 0 0 90px #f5c01a ;}
+
+        }
+
+     #sun{
+       height:200px;
+       width:200px;
+       /*background-color: orange;*/
+       background: radial-gradient(#f5c313, #ec7e08);
+       position: absolute;
+       top:50%;
+       left:50%;
+       margin-top: -100px;
+       margin-left: -100px;
+       border-radius:100px;
+
+       box-shadow: 0 0 45px #f5c01a;
+
+       animation: sunshine 1s infinite alternate;
+     }
+
+     #earth-orbit{
+       height:600px;
+       width: 450px;
+
+       border: 1px solid red;
+       position: absolute;
+       top: 50%;
+       left:50%;
+       margin-top: -300px;
+       margin-left: -225px;
+       /*border-radius: 300px;*/
+     }
+
+     #earth{
+       position: absolute;
+       margin-top: -40px;
+       margin-left: -40px;
+     }
+
+
+    </style>
+</head>
+
+<body id="universe">
+
+  <div id="stars"></div>
+  <div id="sun"></div>
+  <div id="earth-orbit">
+    <img id="earth" src="earth.png" alt="earth" width="80px">
+  </div>
+
+</body>
+</html>
